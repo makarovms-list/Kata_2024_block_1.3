@@ -594,6 +594,14 @@
 @media (min-width: 768px) {
   .content-main__half-column {
     width: 50%; } }
+.content-main__custom-height {
+    max-height: 80px;
+    overflow: hidden;  }
+@media (max-width: 768px) {
+  .content-main__custom-height {
+    max-height: 125px;
+    overflow: hidden;  } }
+
 
 .content-main__paragraph {
   font-size: 14px;
@@ -605,16 +613,11 @@
 .content-main__paragraph+.content-main__paragraph {
   margin-top: 16px;}
 
-.content-main__paragraph--view--tablet {
-  display: none; }
-  @media (min-width: 768px) {
-    .content-main__paragraph--view--tablet {
-      display: block; } }
+
+  
 	  
 	  
-.content-main__paragraph--view--tablet {
-	max-height: 38px;
-	overflow: hidden;  }
+
   @media (min-width: 1024px) {
     .content-main__paragraph--view--tablet {
       max-height: fit-content; } }	  

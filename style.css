@@ -597,11 +597,11 @@
 .content-main__custom-height {
     max-height: 80px;
     overflow: hidden;  }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .content-main__custom-height {
     max-height: 125px;  } }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .content-main__custom-height {
     max-height: fit-content; } }
 

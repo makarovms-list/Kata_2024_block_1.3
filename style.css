@@ -563,16 +563,15 @@
     white-space: nowrap;
     overflow-x: hidden; }
     .content-menu__list-item {
-      font-size: 16px;
-      line-height: 150%;
-      letter-spacing: -0.2px;
-      color: #7E7E82;
       padding: 8px 16px; }
     .content-menu__list-item--active {
       background: #FFFFFF;
       border: 2px solid #B8FFEC;
       border-radius: 6px; }
 	  .content-menu__list-a {
+		  font-size: 16px;
+      		  line-height: 150%;
+      		  letter-spacing: -0.2px;
 		  color: #7E7E82;
 		  text-decoration: none;
 	  }

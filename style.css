@@ -638,8 +638,7 @@
   letter-spacing: -0.2px;
   color: #1B1C21;
   cursor: pointer;
-  transition: all .8s ease;
-display: block;}
+  transition: all .8s ease;  }
   .content-main__btn-link:before {
     content: "";
     width: 24px;

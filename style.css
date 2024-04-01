@@ -599,9 +599,11 @@
     overflow: hidden;  }
 @media (max-width: 768px) {
   .content-main__custom-height {
-    max-height: 125px;
-    overflow: hidden;  } }
+    max-height: 125px;  } }
 
+@media (min-width: 768px) {
+  .content-main__custom-height {
+    max-height: fit-content; } }
 
 .content-main__paragraph {
   font-size: 14px;

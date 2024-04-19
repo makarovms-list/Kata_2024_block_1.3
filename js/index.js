@@ -8,44 +8,44 @@ window.addEventListener('resize', function(event) {
     if (typeof(brandSlider) != 'undefined' && brandSlider != null) {
       swiperBrandSlider = new Swiper('.brand-slider', {
         speed: 600,
-        centeredSlides: true,
-        spaceBetween: 16,
+        centeredSlides: false,
+        spaceBetween: 0,
         touchRatio: 1,
         loop: true,
         wrapperClass: 'brand-slider__wrapper',
         slideClass: 'brand-slider__item',
-        slidesPerView: 1.2,
+        slidesPerView: 1,
         autoplay: {
           delay: 6000,
         },
         breakpoints: {
-          1500: {
+		  1500: {
             slidesPerView: 8,
-            spaceBetween: 32,
+            spaceBetween: 0,
           },
           1200: {
             slidesPerView: 6,
-            spaceBetween: 32,
+            spaceBetween: 0,
           },
           992: {
             slidesPerView: 4,
-            spaceBetween: 32,
+            spaceBetween: 0,
           },
           768: {
             slidesPerView: 3,
-            spaceBetween: 32,
+            spaceBetween: 0,
           },
           576: {
             slidesPerView: 3,
-            spaceBetween: 24,
+            spaceBetween: 0,
           },
-          400: {
+          425: {
             slidesPerView: 2,
-            spaceBetween: 16,
+            spaceBetween: 0,
           },
           320: {
             slidesPerView: 1,
-            spaceBetween: 16,
+            spaceBetween: 0,
           },
         },
         pagination: {
@@ -54,6 +54,7 @@ window.addEventListener('resize', function(event) {
         },
       });
     }
+	document.querySelector('.swiper-pagination').setAttribute('style', '');
   } else {
 	if (typeof(swiperBrandSlider) != 'undefined' && swiperBrandSlider != null) {
 	  swiperBrandSlider.destroy(true, true);
@@ -105,44 +106,45 @@ window.addEventListener('DOMContentLoaded', function(event) {
 		console.log('swiperBrandSlider ');
       swiperBrandSlider = new Swiper('.brand-slider', {
         speed: 600,
-        centeredSlides: true,
-        spaceBetween: 16,
+        centeredSlides: false,
+        spaceBetween: 0,
         touchRatio: 1,
         loop: true,
+		cleanStyles: true,
         wrapperClass: 'brand-slider__wrapper',
         slideClass: 'brand-slider__item',
-        slidesPerView: 1.2,
+        slidesPerView: 1,
         autoplay: {
           delay: 6000,
         },
         breakpoints: {
           1500: {
             slidesPerView: 8,
-            spaceBetween: 32,
+            spaceBetween: 0,
           },
           1200: {
             slidesPerView: 6,
-            spaceBetween: 32,
+            spaceBetween: 0,
           },
           992: {
             slidesPerView: 4,
-            spaceBetween: 32,
+            spaceBetween: 0,
           },
           768: {
             slidesPerView: 3,
-            spaceBetween: 32,
+            spaceBetween: 0,
           },
           576: {
             slidesPerView: 3,
-            spaceBetween: 24,
+            spaceBetween: 0,
           },
-          400: {
+          425: {
             slidesPerView: 2,
-            spaceBetween: 16,
+            spaceBetween: 0,
           },
           320: {
             slidesPerView: 1,
-            spaceBetween: 16,
+            spaceBetween: 0,
           },
         },
         pagination: {
